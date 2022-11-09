@@ -3,6 +3,13 @@
 
 Framework Java para bases de datos NoSQL
 
+[Libro jmoordb-core](http://leanpub.com/jmoordbcore)
+
+Este proyecto utiliza  como base
+[jmoordb-core-processor-genesis](https://github.com/avbravo/jmoordb-core-processor-genesis.git)
+
+
+
 Esta versión esta orientada a Quarkus para crear imagenes Nativas
 
 ## Diferencias
