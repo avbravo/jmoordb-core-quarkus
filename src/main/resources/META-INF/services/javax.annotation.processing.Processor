@@ -1,0 +1,7 @@
+com.jmoordb.core.processor.RepositoryProcessor
+com.jmoordb.core.processor.EntityProcessor
+com.jmoordb.core.processor.DocummentEmbedableProcessor
+com.jmoordb.core.processor.AutoImplementProcessor 
+com.jmoordb.core.processor.AutosecuenceRepositoryProcessor
+com.jmoordb.core.processor.JsonObjectProcessor
+com.jmoordb.core.processor.DateSupportProcessor
