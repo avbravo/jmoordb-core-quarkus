@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.avbravo.jmoordb.core.processor</groupId>
     <artifactId>jmoordb-core-quarkus</artifactId>
-    <version>0.2.100</version>
+    <version>0.3</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -55,17 +55,11 @@
 
             Jmoordb-core-genesis
         -->
-<!--      	<dependency>
+   	<dependency>
 	    <groupId>com.github.avbravo</groupId>
 	    <artifactId>jmoordb-core-processor-genesis</artifactId>
-	    <version>0.1</version>
-	</dependency>-->
-        
-           <dependency>
-            <groupId>com.avbravo.jmoordb.core.processor-genesis</groupId>
-            <artifactId>jmoordb-core-processor-genesis</artifactId>
-            <version>0.1.2</version>
-        </dependency>
+	    <version>0.2</version>
+	</dependency>     
     </dependencies>
     <build>
         <plugins>
