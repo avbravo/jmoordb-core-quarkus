@@ -43,5 +43,6 @@ public interface CrudRepository<T, PK> {
     @DeleteBy
     public Long deleteByPk(PK id);
 
-
+    @Count
+    public Long count(Search...search);
 }
