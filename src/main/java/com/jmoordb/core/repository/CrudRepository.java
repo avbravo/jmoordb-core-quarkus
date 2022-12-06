@@ -4,11 +4,13 @@
  */
 package com.jmoordb.core.repository;
 
+import com.jmoordb.core.annotation.repository.Count;
 import com.jmoordb.core.annotation.repository.DeleteBy;
 import com.jmoordb.core.annotation.repository.Find;
 import com.jmoordb.core.annotation.repository.Save;
 import com.jmoordb.core.annotation.repository.Update;
 import com.jmoordb.core.model.Pagination;
+import com.jmoordb.core.model.Search;
 import com.jmoordb.core.model.Sorted;
 import java.util.List;
 import java.util.Optional;
