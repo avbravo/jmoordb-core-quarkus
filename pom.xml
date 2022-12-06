@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.avbravo.jmoordb.core.processor</groupId>
     <artifactId>jmoordb-core-quarkus</artifactId>
-    <version>0.3</version>
+    <version>0.4</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -58,7 +58,7 @@
    	<dependency>
 	    <groupId>com.github.avbravo</groupId>
 	    <artifactId>jmoordb-core-processor-genesis</artifactId>
-	    <version>0.2</version>
+	    <version>0.3</version>
 	</dependency>     
     </dependencies>
     <build>
