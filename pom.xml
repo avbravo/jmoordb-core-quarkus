@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.avbravo.jmoordb.core.processor</groupId>
     <artifactId>jmoordb-core-quarkus</artifactId>
-    <version>0.6</version>
+    <version>0.7</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -12,7 +12,7 @@
       <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
         <quarkus.platform.group-id>io.quarkus.platform</quarkus.platform.group-id>
         <quarkus.platform.version>2.13.3.Final</quarkus.platform.version>
-        <jmoordb-core-processor-genesis.version>0.6</jmoordb-core-processor-genesis.version>
+        <jmoordb-core-processor-genesis.version>0.7</jmoordb-core-processor-genesis.version>
     </properties>
     
     <developers>
