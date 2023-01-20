@@ -4,6 +4,9 @@
  */
 package com.jmoordb.core.util;
 
+import com.jmoordb.core.model.Pagination;
+import com.jmoordb.core.model.Search;
+import com.jmoordb.core.model.Sorted;
 import static com.jmoordb.core.util.JmoordbCoreUtil.setHourToDate;
 import static com.mongodb.MongoClientSettings.getDefaultCodecRegistry;
 import com.mongodb.client.model.Filters;
@@ -253,4 +256,38 @@ return filter;
 //
 //    }
 //    // </editor-fold>
+    
+        // <editor-fold defaultstate="collapsed" desc="Search convertForLookup( String filter, String sort, Integer page,  Integer size)">
+    /**
+     * Convierte a un Search para ser usado en un lookup
+     * @param filter
+     * @param sort
+     * @param page
+     * @param size
+     * @return 
+     */
+     public static Search convertForLookup( String filter, String sort, Integer page,  Integer size) {
+       Search search = new Search();
+        try {
+
+        
+            Document docFilter = DocumentUtil.jsonToDocument(filter);
+            Document docSort = DocumentUtil.jsonToDocument(sort);
+
+            Pagination pagination = new Pagination(page, size);
+
+            Sorted sorted = new Sorted();
+            sorted.setSort(docSort);
+
+     
+            search.setFilter(docFilter);
+            search.setSorted(sorted);
+            search.setPagination(pagination);
+             } catch (Exception e) {
+          MessagesUtil.error(MessagesUtil.nameOfClassAndMethod() + "error: " + e.getLocalizedMessage());
+        }
+
+        return search;
+     }
+// </editor-fold>
 }
