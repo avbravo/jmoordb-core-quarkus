@@ -5,7 +5,6 @@
 package com.jmoordb.core.repository;
 
 import com.jmoordb.core.annotation.repository.CoreException;
-import com.jmoordb.core.annotation.repository.Count;
 import com.jmoordb.core.annotation.repository.DeleteBy;
 import com.jmoordb.core.annotation.repository.DeleteMany;
 import com.jmoordb.core.annotation.repository.Find;
@@ -18,6 +17,7 @@ import com.jmoordb.core.model.Search;
 import com.jmoordb.core.model.Sorted;
 import com.jmoordb.core.processor.model.JmoordbException;
 import com.mongodb.client.ListIndexesIterable;
+import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoIterable;
 import java.util.List;
 import java.util.Optional;
@@ -94,4 +94,5 @@ public JmoordbException getJmoordbException();
     
      public Optional<MongoIterable<String>> listCollectionNames();
 
+     public Optional<MongoCollection<Document>> getCollection();
 }
